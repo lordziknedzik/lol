@@ -1,0 +1,37 @@
+.global {
+
+  &--button {
+    @include flexCC;
+    padding: 10px 15px;
+    margin: 8px;
+    min-width: 220px;
+    font-size: $thumb * 0.25;
+    color: $whiteFont;
+    clip-path: polygon(7% 0, 100% 0, 100% 70%, 92% 100%, 0 100%, 0 33%);
+    transition-duration: 1s;
+
+    &__primary {
+      background-color: $primaryColor;
+    }
+
+    &__secondary {
+      background-color: $secondaryColor
+    }
+
+    &:hover {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+
+  }
+
+  &--header {
+    @include titleFontSize;
+    @include fontStyles;
+
+  }
+
+  &--paragraph {
+    @include fontStyles;
+  }
+}

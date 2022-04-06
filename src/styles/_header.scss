@@ -1,0 +1,49 @@
+.header {
+  @include flexCC;
+  font-weight: 800;
+  height: $thumb * 1.8;
+  background-color: black;
+  color: $whiteFont;
+  justify-content: space-between;
+
+  &--link {
+    padding: 10px;
+    border: 1px solid transparent;
+    position: relative;
+    color: $whiteFont;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 3px;
+      background-color: $primaryColor;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      display: none;
+    }
+
+    &:hover {
+      border: 1px solid grey;
+      border-radius: 10px;
+      background-color: grey;
+
+      &::after {
+        display: flex;
+      }
+    }
+  }
+
+  &--riot {
+    color: $whiteFont;
+    height: $thumb;
+    width: $thumb;
+    &:hover {
+      color: red;
+    }
+  }
+  &--navbar {
+    @include flexCC;
+    gap: 10px;
+  }
+}

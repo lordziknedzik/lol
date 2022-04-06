@@ -1,0 +1,39 @@
+$primaryFontFamily: 'EB Garamond', serif;
+$whiteFont: rgb(241, 241, 241);
+
+
+
+@mixin titleFontSize {
+
+  &__L {
+    font-size: $thumb * 1.5;
+  }
+  &__M {
+    font-size: $thumb;
+  }
+  &__S {
+    font-size: $thumb 0.75;
+  }
+  
+}
+
+@mixin fontStyles {
+
+  &__italics {
+    font-style: italic;
+  }
+
+  &__bold {
+    font-weight: bold;
+  }
+
+  &__boldItalics {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  &__centered {
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,18 @@
+.about {
+  margin: $thumb * 3 0;
+  background-color: white;
+  width: 100%;
+  
+  &--buttons{
+    @include flexCC;
+    width: 100%;
+  }
+
+  &--headers {
+    @include flexCC;
+    flex-direction: column;
+    gap: $thumb * 0.5;
+    padding: 0 33%;
+    text-transform: uppercase;
+  }
+}
